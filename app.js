@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/lab9")
   .catch(err => console.error("MongoDB connection error:", err));
 
 app.get("/", (req, res) => {
-  res.json({ message: "API is working!" });
+  res.json({ message: "API is working!!" });
 });
 
 app.use("/api/books", bookRoutes);

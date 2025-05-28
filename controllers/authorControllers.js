@@ -21,7 +21,7 @@ exports.updateAuthor = async (req, res) => {
     );
     
     if (!updatedAuthor) {
-      return res.status(404).json({ message: 'Author not found' });
+      return res.status(404).json({ message: 'Author not found.' });
     }
     
     res.status(200).json(updatedAuthor);
